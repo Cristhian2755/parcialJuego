@@ -1,0 +1,76 @@
+/* Estilos para el cuerpo y html de la página */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007bff;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para posiciones relativas y absolutas */
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Ajustes de margen y espaciado para el contenedor principal */
+main.container {
+    margin-top: 50px;
+}
+
+/* Estilos para el título en el encabezado */
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Estilos para los botones en el encabezado */
+header .btn {
+    font-size: 1rem;
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para los subtítulos */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Estilos para los párrafos */
+p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
