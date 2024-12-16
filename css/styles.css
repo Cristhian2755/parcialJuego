@@ -1,0 +1,132 @@
+/* Estilos básicos del cuerpo y la página */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Imagen de fondo en pantalla completa */
+.fullscreen-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Estilos de texto */
+h1, p {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #007bff;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+/* Contenedor del menú principal */
+.main-menu {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+/* Estilos de la caja del menú */
+.menu-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px; /* Ajuste del tamaño máximo */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.menu-box h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Estilos de la lista del menú */
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Disposición horizontal */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-box li {
+    margin: 10px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* Estilos de los botones */
+.menu-options .btn {
+    background-color: #333;
+    color: #fff;
+    font-size: 1.2em;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+}
+
+.menu-options .btn:hover {
+    background-color: #555;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header {
+        padding: 30px;
+    }
+
+    .menu-box {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .menu-options .btn {
+        font-size: 1em;
+    }
+
+    .menu-box ul {
+        flex-direction: column; 
+    }
+
+    .menu-box li {
+        margin: 10px 0;
+    }
+}
+
+/* Imagen de fondo para el juego */
+.fondo-juego {
+    background-image: url('img/fondoJuego.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* La imagen se queda fija al hacer scroll */
+    position: relative;
+    height: 100vh;
+    z-index: -1;
+}
